@@ -1,0 +1,214 @@
+.screen-four {
+    overflow-y: hidden;
+}
+
+.score-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #b296c4;
+    color: #fff;
+}
+
+.score-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.score-section h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.timer {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.choice-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background-image:url("backgrounds/no_circus.png");
+}
+.battle {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    gap: 20px;              
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f0f0f0; 
+    border: 2px solid #ccc;    
+    border-radius: 10px;
+    background-image:url("backgrounds/no_circus.png");
+
+}
+.battle .player, .battle .computer {
+    text-align: center; 
+}
+.battle img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+    padding: 5px;
+    
+}
+.vs {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6d044f;
+    margin: 30px;
+}
+
+.botton-choice {
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s, opacity 0.2s;
+    margin: 30px;
+}
+
+.botton-choice:hover {
+    transform: scale(1.1);
+    background-color: #bbb;
+}
+
+img {
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    pointer-events: none;
+}
+.results {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #b296c4;
+    color: #fff;
+    border: 2px solid #6d044f;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; 
+}
+
+.results button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6d044f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.battle img:hover {
+    transform: scale(1.1); 
+    opacity: 0.9;
+}
+
+.battle .player-choice {
+    transform:rotate(-90deg);
+}
+
+.battle .computer-choice{
+    transform: rotate(90deg);
+}
+
+.results button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6d044f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.popup.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#close-popup {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background-color: #0056b3;
+}
+#close-winners-popup {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #6d044f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-winners-popup:hover {
+    background-color: #4a0235;
+}
+
+#winners-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 18px;
+}
+
+#winners-list li {
+    margin: 10px 0;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}

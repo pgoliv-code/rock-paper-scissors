@@ -1,0 +1,38 @@
+body {
+    overflow-y: hidden;
+    font-family: monospace;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("/backgrounds/tablet-bright.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #E8DBF0;
+}
+
+.screen-one {
+    height:100vw;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+    font-size: 30px;
+    background-color: greenyellow;
+    padding: 10px;
+    margin: 37%;
+    margin-top: 100%;
+    border: double;
+}
+
+.hidden {
+    display: none;
+}

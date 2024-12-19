@@ -1,0 +1,18 @@
+---------------
+make a readme
+---------------
+https://www.makeareadme.com/
+
+----------------------
+responsive background
+----------------------
+https://www.browserstack.com/guide/how-to-make-images-responsive#:~:text=Here's%20how%20to%20create%20responsive,width%20of%20the%20device%20viewport.
+
+https://cloudinary.com/guides/front-end-development/css-background-image-quick-tutorial-and-3-automation-tips#:~:text=Powered%20Generative%20Fill-,Background%20Image%20Syntax%20in%20CSS,path%20or%20a%20relative%20path.
+
+
+----------
+html tags
+----------
+https://www.w3schools.com/tags/tag_section.asp
+

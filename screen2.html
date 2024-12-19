@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="screen2.css">
+    <link rel="stylesheet" type="text/css" href="screen3.css">
+    <link rel="stylesheet" type="text/css" href="screen4.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<!--PANTALLA2-->
+<!--BOTON LOGIN
+    SETTINGS
+    ENTRAR-->
+    <div class="screen-two form-container">
+        <h1> Welcome!</h1>
+        <h2> Login </h2>
+        <form> 
+            <div class="Login"> 
+                <label for="text ">Username</label>
+                <input class="login-form" type="text" id="name" name="name" placeholder="Enter your username"></input>
+                <br>
+                <br>
+                <label for="text "> Email: </label>
+                <input type="email" id="email" email="email" placeholder="Enter your email"></input>
+                <br>
+                <br>
+                <button class="enter-button btn_audio" onclick="sound.play()">Enter</button>
+            </div>
+            <br>
+            <br>    
+            <div class="Register">
+                <h2> Register </h2>
+                <label for="text">Username</label>
+                <input type="text" id="name" name="name" placeholder="Create your username"  > </input>
+                <br>
+                <br>
+                <label for="text">Email:</label> 
+                <input type="email" id="email" email="email" placeholder="Enter your email"> </input>
+                <br>
+                <br>
+                <button class="register-button btn_audio" onclick="sound.play()">Create account</button>
+            </div>
+        </form>
+    </div>
+    <!--PANTALLA3
+    --CÓMO JUGAR
+        --- RATÓN O TECLADO ---
+        BOTÓN EMPEZAR-->
+    <div class="screen-three hidden">
+        <div class="rules">
+            <h1 class="how-to-tittle">How to Play</h1>
+            <h2>The game has 3 rounds. You must win 2 of them to become the winner!</h2>
+            <h2>Each round, you must pick between rock, paper and scissors.</h2>
+            <h2>The winner of each round is defined by the following rules:</h2>
+            <ul>
+                <li>Rock beats scissors, but paper beats rock!</li>
+                <li>Scissors beats paper, but rock beats scissors!</li>
+                <li>Paper beats rock, but scissors beat paper!</li>
+            </ul>
+            <h2>You have 15 seconds to pick your tool!</h2>
+            <h2>When the game finishes, you will be declared winner or loser. Press 'PLAY AGAIN' if you want to give it another try!</h2>
+        </div>
+        <div class="div-start-button">
+            <button class="start-button btn_audio" onclick="sound.play()">START</button>
+        </div>
+    </div>
+<!--PANTALLA4-->
+    <!--JUEGO---
+    BOTÓN -->
+    <div class="screen-four hidden">
+        <div class="score-container">
+            <div class="score-section1">
+                <h2>Computer</h2>
+                <p class="score-computer">0</p>
+            </div>
+            <div class="timer">
+                <span id="time-left">00:20</span>
+            </div>
+            <div class="score-section2">
+                <h2>Player</h2>
+                <p class="score-player">0</p>
+            </div>
+        </div>
+        <div class="battle">
+            <img class="computer-choice initial" src="Files/clown-computer.gif" alt="Computer's Choice">
+            <img class="player-choice initial" src="Files/clown-player.gif" alt="Player's Choice">
+            <div class="result-message hidden" id="result-message">
+                <h1 id="result-text"></h1>
+            </div> 
+        </div>
+        <section class="choice-section">
+            <button class="botton-choice">
+                <img src="Images/paper.png" alt="paper">
+            </button>
+            <button class="botton-choice">
+                <img src="Images/rock.png" alt="rock">
+            </button>
+            <button class="botton-choice">
+                <img src="Images/scissors.png" alt="scissors">
+            </button>
+        </section>
+        <div class="results hiddenTwo">
+            <button class="play-again-button">PLAY AGAIN</button>
+            <button class="winners-list">WINNERS</button> 
+        </div>
+        <div class="popup hidden" id="final-winner-popup">
+            <div class="popup-content">
+                <h2 id="final-winner-text"></h2>
+                <button id="close-popup">Aceptar</button>
+            </div>
+        </div>
+        <div class="popup hidden" id="winners-popup">
+            <div class="popup-content">
+                <h2>Winners List</h2>
+                <ul id="winners-list">
+                </ul>
+                <button id="close-winners-popup">Close</button>
+            </div>
+        </div>
+    </div>
+<footer class=" footer-container">
+    <div class="footer-main">
+        <div class="footer-left">
+            <a href="index.html"><img src="icons/Log out.svg" onclick="sound.play()"alt="logout button"></a>
+        </div>
+        <div class="footer-right">
+            <button onclick="mute()" class="off-button"><img class="sound-img" src="icons/Volume_2.png" alt="sound button"></button>
+        </div>
+    </div>
+</footer>
+<audio id="background_audio" autoplay="true" loop="loop"><source src="sound_effects/background_sound.mp3"></audio>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>

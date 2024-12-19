@@ -1,0 +1,45 @@
+.how-to-tittle {
+    display: flex;
+    align-self: center;
+}
+
+.div-start-button {
+    display: flex;
+    justify-content: center;
+}
+
+.screen-rules {
+    flex-direction: column;
+    margin: 40px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #e8dbf0; 
+    border: 2px solid #ccc; 
+    border-radius: 30px; 
+    padding: 20px; 
+    width: 300px; 
+    margin: 0 auto; 
+    font-size: 10px;
+}
+
+.start-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    align-self: center;
+    margin-top: 30px;
+    font-family: monospace;
+    font-size: 26px;
+    background-color: greenyellow;
+}
